@@ -1,19 +1,15 @@
 <?php
+require('../app/functions.php');
 
-$today = date('Y-m-d H:i:s l')
-
+include('../app/_parts/_header.php');
 ?>
 
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <title>PHP Practice</title>
-  </head>
-  <body>
-    <p>Hello, PHP!</p>
-    <p><?php echo date('Y-m-d H:i:s l') ?></p>
-    <p><?= date('Y-m-d H:i:s l') ?></p>
-    <p><?= $today ?></p>
-  </body>
-</html>
+<form action="result.php" method="get">
+    <label><input type="radio" name="color" value="orange">Orange</label>
+    <label><input type="radio" name="color" value="pink">Pink</label>
+    <label><input type="radio" name="color" value="gold">Gold</label>
+    <button>Send</button>
+    <a href="reset.php">[reset]</a>
+</form>
+
+<?php include('../app/_parts/_footer.php');
