@@ -1,9 +1,3 @@
-<?php
-
-$color = $_SESSION['color'] ?? 'transparent';
-
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -12,4 +6,4 @@ $color = $_SESSION['color'] ?? 'transparent';
     <title>PHP Practice</title>
 </head>
 
-<body style="background-color: <?= h($color); ?>;">
+<body>
